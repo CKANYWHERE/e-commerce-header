@@ -80,3 +80,61 @@
     border: none;
     color:#63e6be;
 }
+.modalTextBox {
+    border:none;
+    height: 36px;
+    width: 500px;
+    border-radius: 18px;
+    margin-bottom:10px;
+    background-color: #ced4da;
+    color:#212529;
+    font-size: 18px;
+}
+
+.siginInDialog {
+    width: 30vw;
+    height: 25vw;
+    padding: 2em;
+    background: #faf9f9;
+    color: #212529;
+    box-shadow: 0 0 5px rgba(101, 110, 119, .2);
+    border: 0;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+.siginInDialog[open] {
+    animation: .10s linear slidein;
+}
+
+
+.siginInDialog::backdrop {
+    background: rgba(224, 228, 232, .9);
+    animation: .10s ease fade;
+}
+
+.siginInDialogTitle {
+    color: #63e6be;
+}
+
+.signInDialogCloseBtn {
+    display: block;
+    width: 100%;
+    margin-top: 2rem;
+    background-color: #ced4da;
+    color:#212529;
+    border: none;
+    font-size: 15px;
+    border-radius: 12px;
+}
+.signInDialogSubmitBtn {
+    display: block;
+    width: 100%;
+    margin-top: 2rem;
+    background-color: #63e6be;
+    color:#faf9f9;
+    border: none;
+    font-size: 15px;
+    border-radius: 12px;
+}

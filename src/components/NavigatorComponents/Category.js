@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
-import StyleCategory from '../../css/maincomponent/StyleCategory.scss'
+import StyleCategory from '../../css/navigatecomponent/StyleCategory.scss'
 import CategoryName from './CategoryName';
+import Search from './Search'
 class Category extends Component {
     state = {  }
     render() {
@@ -14,6 +15,8 @@ class Category extends Component {
                     <CategoryName name="신상품"/>
                     <CategoryName name="베스트"/>
                     <CategoryName name="오늘의 농작물"/>  
+                    <Search/>
+                   
                 </div>
               </nav>
         );

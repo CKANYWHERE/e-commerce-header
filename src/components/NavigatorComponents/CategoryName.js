@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import StyleCategory from '../../css/maincomponent/StyleCategory.scss';
+import StyleCategory from '../../css/navigatecomponent/StyleCategory.scss';
 import MainCategoryName from './MainCategoryName';
 class CategoryName extends Component {
     state = { isMain:false }

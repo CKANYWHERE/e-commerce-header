@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import StyleCategory from '../../css/maincomponent/StyleCategory.scss';
+import StyleCategory from '../../css/navigatecomponent/StyleCategory.scss';
 
 class Modal extends React.Component {
   constructor () {
@@ -37,7 +37,7 @@ class Modal extends React.Component {
       this.state.isVisible = this.props.visible;
 
       return (
-          <dialog className="categoryDialog" ref={(ref) => this.dialog = ref}>
+          <dialog className={this.props.selectStyle} ref={(ref) => this.dialog = ref}>
               {this.props.children}
           </dialog>
       );

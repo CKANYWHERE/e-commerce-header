@@ -1,11 +1,13 @@
 .Header{
     text-align: center;
-    color:#ffffff;
+    color:#faf9f9;
     font-size: 25px;
 }
 
 .navContainer{
+  
     background-color: #63e6be;
+    flex-direction: column;
 }
 
 
@@ -23,13 +25,17 @@
     justify-content: center;
     background-color: #63e6be;
     font-weight: normal;
-    
+}
+
+.categoryMainName{
+    display: flex;
+    align-items: center;
 }
 
 .categoryButton{
     width: 50%;
     background-color: #63e6be;
-    color: #ffffff;
+    color: #faf9f9;
     border: none;
     font-size:20px;
     transition-duration: 0.1s;
@@ -39,7 +45,7 @@
 .categoryMainButton{
     width: 100%;
     background-color: #63e6be;
-    color: #ffffff;
+    color: #faf9f9;
     border: none;
     font-size:20px;
     transition-duration: 0.1s;
@@ -49,7 +55,7 @@
 .categoryMainButton:hover{
     width: 100%;
     background-color: #63e6be;
-    color: #ffffff;
+    color: #faf9f9;
     border: none;
     font-size:35px;
     transition-duration: 0.1s;
@@ -58,9 +64,32 @@
 
 .categoryButton:hover{
     background-color: #63e6be;;
-    color: #ffffff;
+    color: #faf9f9;
     border: none;
     font-size:35px;
+}
+
+.searchContainer{
+    display: flex;
+    
+    padding: 10px;
+}
+
+.searchTxt{
+    border:none;
+    height: 30;
+    height: 36px;
+    width: 230px;
+    border-radius: 18px;
+    margin-bottom:10px;
+}
+
+.searchBtn{
+    margin-left: -52px;
+    border-radius: 18px;
+    height: 9%;
+    background-color: #ffffff;
+    border: none;
 }
 
 .backdropStyle{
@@ -69,12 +98,12 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #ffffff;
+    background-color: #faf9f9;
     padding: 50;
 }
 
 .modalStyle {
-    background-color: #ffffff;
+    background-color: #faf9f9;
     border: radius 5px;
     max-width: 500;
     min-height: 300;
@@ -83,10 +112,10 @@
 }
 
 .categoryDialog {
-    width: 90vw;
-    max-width: 20rem;
-    padding: 1em;
-    background: #fff;
+    width: 15vw;
+    height: 20vw;
+    padding: 2em;
+    background: #faf9f9;
     color: #656e77;
     box-shadow: 0 0 5px rgba(101, 110, 119, .2);
     border: 0;
@@ -106,16 +135,18 @@
     color: #63e6be;
 }
 
+
 .categoryDialogbtn {
     display: block;
     width: 100%;
     margin-top: 2rem;
     background-color: #63e6be;
-    color:#ffffff;
+    color:#faf9f9;
     border: none;
     font-size: 15px;
     border-radius: 12px;
 }
+
 
 
 @keyframes slidein {
@@ -135,3 +166,4 @@
         opacity: 1;
     }
 }
+

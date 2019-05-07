@@ -1,10 +1,13 @@
 import React,{Component} from 'react';
 import Auth from './Auth';
 import Category from './Category';
+
 import color from '../../color';
-import StyleAuth from '../../css/maincomponent/StyleAuths.scss'
+import StyleAuth from '../../css/navigatecomponent/StyleAuths.scss'
 
 class MainComponent extends Component{
+
+
     render(){
         return(
 
@@ -29,12 +32,12 @@ class MainComponent extends Component{
                 alt="../../asset/MainLogo.png" height="70" width="70"/>
             </div>
             
-            <div>
+            <div >
                 <Category/>
             </div>
 
         </div>
-            
+          
         )
 
     }

@@ -1,0 +1,137 @@
+.Header{
+    text-align: center;
+    color:#ffffff;
+    font-size: 25px;
+}
+
+.navContainer{
+    background-color: #63e6be;
+}
+
+
+.categoryNameContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 10%;
+    justify-content: center;
+}
+
+.categoryName{
+    display: flex;
+    width:15%;
+    justify-content: center;
+    background-color: #63e6be;
+    font-weight: normal;
+    
+}
+
+.categoryButton{
+    width: 50%;
+    background-color: #63e6be;
+    color: #ffffff;
+    border: none;
+    font-size:20px;
+    transition-duration: 0.1s;
+    text-align: center;
+}
+
+.categoryMainButton{
+    width: 100%;
+    background-color: #63e6be;
+    color: #ffffff;
+    border: none;
+    font-size:20px;
+    transition-duration: 0.1s;
+    text-align: center;
+}
+
+.categoryMainButton:hover{
+    width: 100%;
+    background-color: #63e6be;
+    color: #ffffff;
+    border: none;
+    font-size:35px;
+    transition-duration: 0.1s;
+    text-align: center;
+}
+
+.categoryButton:hover{
+    background-color: #63e6be;;
+    color: #ffffff;
+    border: none;
+    font-size:35px;
+}
+
+.backdropStyle{
+    position: 'fixed';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    padding: 50;
+}
+
+.modalStyle {
+    background-color: #ffffff;
+    border: radius 5px;
+    max-width: 500;
+    min-height: 300;
+    margin:0 auto;
+    padding:30;
+}
+
+.categoryDialog {
+    width: 90vw;
+    max-width: 20rem;
+    padding: 1em;
+    background: #fff;
+    color: #656e77;
+    box-shadow: 0 0 5px rgba(101, 110, 119, .2);
+    border: 0;
+    text-align: center;
+}
+
+.categoryDialog[open] {
+    animation: .10s linear slidein;
+}
+
+.categoryDialog::backdrop {
+    background: rgba(224, 228, 232, .9);
+    animation: .10s ease fade;
+}
+
+.categoryDialogTitle {
+    color: #63e6be;
+}
+
+.categoryDialogbtn {
+    display: block;
+    width: 100%;
+    margin-top: 2rem;
+    background-color: #63e6be;
+    color:#ffffff;
+    border: none;
+    font-size: 15px;
+    border-radius: 12px;
+}
+
+
+@keyframes slidein {
+    from {
+        transform: translate3d(0, 30px, 0);
+    }
+    to {
+        transfrom: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .3;
+    }
+    to {
+        opacity: 1;
+    }
+}

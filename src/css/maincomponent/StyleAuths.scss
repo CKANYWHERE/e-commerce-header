@@ -1,3 +1,4 @@
+
 .mainHeadContainer{
     display: flex;
     flex:1;
@@ -38,7 +39,8 @@
 
 .deliveryButton{
     //display: inline;
-    font-size: 8px;
+    font-size: 4px;
+    color: #343a40;
     border-radius: 12px;
     background-color: white;
     border: 1px solid #a3a8ac;
@@ -63,11 +65,12 @@
 }
 
 .authButton{
-    font-size: 12px;
+    font-size: 8px;
     border-radius: 12px;
     background-color: white;
     border: none;
     transition-duration: 0.4s;
+    color:#343a40;
 }
 
 .authButton:hover{

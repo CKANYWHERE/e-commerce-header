@@ -10,7 +10,7 @@ class AuthTxt extends Component {
             
             <div style={{margin:8}}>
                 <button className="authButton">  
-                    <b>{this.props.name}</b>
+                    {this.props.name}
                 </button>
                 <hr align="left"/>
             </div>

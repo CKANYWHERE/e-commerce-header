@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import Auth from './Auth';
-
+import Category from './Category';
 import color from '../../color';
 import StyleAuth from '../../css/maincomponent/StyleAuths.scss'
 
@@ -13,7 +13,7 @@ class MainComponent extends Component{
             <div className="header">
                <div className="deliveryContainer">
                     <button className="deliveryButton">
-                        <b>우리지역 야간배송 조회 ></b>
+                        우리지역 야간배송 조회 >
                      </button>
                 </div>
             
@@ -26,9 +26,13 @@ class MainComponent extends Component{
 
             <div className="mainLogoContainer">
                 <img src = {require('../../asset/mainlogo2.jpg')}
-                alt="../../asset/MainLogo.png" height="100" width="100"/>
+                alt="../../asset/MainLogo.png" height="70" width="70"/>
             </div>
             
+            <div>
+                <Category/>
+            </div>
+
         </div>
             
         )

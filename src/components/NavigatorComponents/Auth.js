@@ -15,6 +15,8 @@ class AuthTxt extends Component {
     
         this.signInShowModal = this.signInShowModal.bind(this);
         this.signInHideModal = this.signInHideModal.bind(this);
+        this.logInShowModal = this.logInShowModal.bind(this);
+        this.logInHideModal = this.logInHideModal.bind(this);
       }
     signInShowModal () {
         this.setState({signInVisible: true});
@@ -65,9 +67,30 @@ class AuthTxt extends Component {
         </Modal>
         </div>
         :
-        <button onClick={this.signInShowModal} className="authButton">  
+        <div>
+        <button onClick={this.logInShowModal} className="authButton">  
                     {this.props.name}
+        </button>
+     
+          <Modal visible={this.state.logInVisible} selectStyle={"logInDialog"}>
+            <h1 className="categoryDialogTitle">
+                로그인
+            </h1>
+        <form>
+            <p className="dialog__txt">
+                <input type="email" placeholder="ID" className="modalTextBox"/>
+            </p>
+            <p className="dialog__txt">
+                <input type="password" placeholder="PW" className="modalTextBox"/>
+            </p>
+      
+            <button type="button" className="signInDialogSubmitBtn"> 로그인</button>
+            </form>
+                <button onClick={this.logInHideModal} type="button" className="signInDialogCloseBtn">
+                    Close
                 </button>
+        </Modal>
+        </div>
     }
                
               
